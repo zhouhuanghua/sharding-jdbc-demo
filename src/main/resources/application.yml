@@ -5,26 +5,26 @@ sharding:
       ds0:
         type: com.zaxxer.hikari.HikariDataSource
         driver-class-name: com.mysql.cj.jdbc.Driver
-        jdbc-url: jdbc:mysql://thunderclap.cn:3306/ds0
-        username: zhh
+        jdbc-url: jdbc:mysql://ip:port/ds0
+        username: root
         password: 123456
       ds1:
         type: com.zaxxer.hikari.HikariDataSource
         driver-class-name: com.mysql.cj.jdbc.Driver
-        jdbc-url: jdbc:mysql://thunderclap.cn:3306/ds1
-        username: zhh
+        jdbc-url: jdbc:mysql://ip:port/ds1
+        username: root
         password: 123456
       slave0:
         type: com.zaxxer.hikari.HikariDataSource
         driver-class-name: com.mysql.cj.jdbc.Driver
-        jdbc-url: jdbc:mysql://thunderclap.cn:3306/slave0
-        username: zhh
+        jdbc-url: jdbc:mysql://ip:port/slave0
+        username: root
         password: 123456
       slave1:
         type: com.zaxxer.hikari.HikariDataSource
         driver-class-name: com.mysql.cj.jdbc.Driver
-        jdbc-url: jdbc:mysql://thunderclap.cn:3306/slave1
-        username: zhh
+        jdbc-url: jdbc:mysql://ip:port/slave1
+        username: root
         password: 123456
 
     config:

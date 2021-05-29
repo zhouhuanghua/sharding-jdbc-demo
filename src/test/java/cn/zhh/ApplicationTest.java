@@ -20,4 +20,14 @@ public class ApplicationTest {
             jdbcTemplate.execute(sql);
         }
     }
+
+    @Test
+    public void testSelect() {
+        for (int i = 0; i < 10; i++) {
+            int userId = i + 1;
+            String sql = String.format("select name from t_user where user_id = %s", userId);
+            String name = jdbcTemplate.queryForObject(sql, String.class);
+            System.out.printf("userId: %s, name: %s%n", userId, name);
+        }
+    }
 }
